@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>tao_manage_pojo</module>
+        <module>tao_manager_mapper</module>
+        <module>tao-manager-service</module>
+        <module>tao_manager_web</module>
+    </modules>
+    <parent>
+        <artifactId>tao_parent</artifactId>
+        <groupId>com.tao_parent</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../tao_parent/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.tao</groupId>
+    <artifactId>tao_manager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <!--依赖管理-->
+    <dependencies>
+        <dependency>
+            <groupId>com.tao</groupId>
+            <artifactId>tao_common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <name>tao_manager Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <build>
+        <finalName>tao_manager</finalName>
+    </build>
+</project>
